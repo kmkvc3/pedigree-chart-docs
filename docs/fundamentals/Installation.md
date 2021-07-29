@@ -82,6 +82,9 @@ Make sure you will call `setDiagram` method when all DOM elements are accessible
 
 :::
 
+## Initial configuration
+
 ## What's next?
 
+- Configue chart window. [Go to configuration](https://docusaurus.io/)
 - Start drawing. [Go to basic components](https://docusaurus.io/)
