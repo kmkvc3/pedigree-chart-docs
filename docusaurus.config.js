@@ -5,13 +5,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 module.exports = {
   title: "Pedigree Chart",
   tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  url: "http://kmkvc3.github.io",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "facebook", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  organizationName: "GA4GH", // Usually your GitHub org/user name.
+  projectName: "pedigree-chart-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "Pedigree Chart",
@@ -35,48 +35,44 @@ module.exports = {
     },
     footer: {
       style: "dark",
-      links: [
-        {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
-          title: "Community",
-          items: [
-            {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
-            },
-            {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
-            },
-            {
-              label: "Twitter",
-              href: "https://twitter.com/docusaurus",
-            },
-          ],
-        },
-        {
-          title: "More",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      // links: [
+        // {
+        //   title: "Docs",
+        //   items: [
+        //     {
+        //       label: "Tutorial",
+        //       to: "/docs/intro",
+        //     },
+        //   ],
+        // },
+        // {
+        //   title: "Community",
+        //   items: [
+        //     {
+        //       label: "Stack Overflow",
+        //       href: "https://stackoverflow.com/questions/tagged/docusaurus",
+        //     },
+        //     {
+        //       label: "Discord",
+        //       href: "https://discordapp.com/invite/docusaurus",
+        //     },
+        //     {
+        //       label: "Twitter",
+        //       href: "https://twitter.com/docusaurus",
+        //     },
+        //   ],
+        // },
+      //   {
+      //     title: "More",
+      //     items: [{
+      //       html: `
+      //         <p>Google Summer of Code 2021</p>
+      //         <p>Google Summer of Code 2021</p>
+      //     `,}
+      //     ],
+      //   },
+      // ],
+      copyright: "Google Summer of Code 2021 @Kamil Albrycht"
     },
     prism: {
       theme: lightCodeTheme,
