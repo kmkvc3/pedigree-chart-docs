@@ -157,6 +157,120 @@ For your custom event handler you can add a parameter, where pedigree instance w
 
 ## Pedigree
 
+The basic component/
 
+### `draw`
+
+Force pedigree redrawing.
+
+**Example usage:**
+
+```js
+const pedigree = chart.create("unknown", 100, 200)
+
+pedigree.draw()
+```
+
+:::info
+
+Use this method to force redrawing. You don't have to use it 
+by default.
+
+:::
+
+### `getX`
+
+Get the shape position on X-axis.
+
+### `getY`
+
+Get the shape position on Y-axis.
+
+### `getMidX`
+
+Get the middle of shape position on X-axis.
+
+### `getMidY`
+
+Get the middle of shape position on Y-axis.
+
+### `setStorage`
+
+Add data that you want to store in specific pedigree.
+
+**Params**
+
+- `storageObj`
+    - Any key-value pair object
+
+### `getStorage`
+
+Returns data from pedigree storage
+
+**Example usage:**
+
+```js
+const data = pedigree.getStorage()
+```
+
+### `setLabel`
+
+Attach label to a pedigree.
+
+**Params**
+
+- `configObj`
+    - Any key-value pair object
+
+**Example usage:**
+
+```js
+pedigree.setLabel({
+    id: "some-random-value",
+    name: "Kamil"
+})
+```
+
+### `addDiseaseShape`
+
+Fill the pedigree with various shapes.
+
+**Params**
+- `shape: string`
+- `color: string`
+    - any **HEX** value
+
+**Available shapes**
+- `q1`
+    - fill top-left quarter
+- `q2`
+    - fill top-right quarter
+- `q3`
+    - fill bottom-left quarter
+- `q4`
+    - fill bottom-right quarter
+- `dot`
+    - draw a dot in middle of shape
+- `fill`
+    - fill a whole shape
+
+**Example usage:**
+
+```js
+pedigree.addDiseaseShape("q1", "#1f1f1f")
+```
+
+:::info
+
+You can stack shapes to build more extraordinary shapes
+
+:::
+
+**Example usage:**
+
+```js
+pedigree.addDiseaseShape("q3", "#1f1f1f")
+pedigree.addDiseaseShape("q4", "#1f1f1f")
+```
 
 ## Legend
