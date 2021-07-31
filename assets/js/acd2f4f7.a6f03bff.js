@@ -1,0 +1,1 @@
+(self.webpackChunkpedigree_chart_docs=self.webpackChunkpedigree_chart_docs||[]).push([[213],{5465:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/pedigree-chart-docs/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/pedigree-chart-docs/blog/tags/docusaurus"}')}}]);

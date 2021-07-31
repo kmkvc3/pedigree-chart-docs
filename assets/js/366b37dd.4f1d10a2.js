@@ -1,0 +1,1 @@
+(self.webpackChunkpedigree_chart_docs=self.webpackChunkpedigree_chart_docs||[]).push([[276],{4450:function(e){"use strict";e.exports=JSON.parse('{"allTagsPath":"/pedigree-chart-docs/blog/tags","slug":"hola","name":"hola","count":1,"permalink":"/pedigree-chart-docs/blog/tags/hola"}')}}]);
