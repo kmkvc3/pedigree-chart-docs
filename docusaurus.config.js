@@ -6,11 +6,11 @@ module.exports = {
   title: "Pedigree Chart",
   tagline: "Dinosaurs are cool",
   url: "http://kmkvc3.github.io",
-  baseUrl: "/",
+  baseUrl: "/pedigree-chart-docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "GA4GH", // Usually your GitHub org/user name.
+  organizationName: "kmkvc3", // Usually your GitHub org/user name.
   projectName: "pedigree-chart-docs", // Usually your repo name.
   themeConfig: {
     navbar: {
