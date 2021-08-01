@@ -157,7 +157,7 @@ For your custom event handler you can add a parameter, where pedigree instance w
 
 ## Pedigree
 
-The basic component/
+The basic component.
 
 ### `draw`
 
@@ -274,3 +274,37 @@ pedigree.addDiseaseShape("q4", "#1f1f1f")
 ```
 
 ## Legend
+
+Create description table with disease names and thier shapes
+
+### `setPedigree`
+
+Attach pedigree shape with its description.
+
+**Params**
+
+- `pedigree: Pedigree`
+    - Pedigree shape and color that you want to save in the legend
+- `description: string`
+    - Description attached to pedigree shape
+
+**Example usage:**
+
+```js
+legendTable.setPedigree(unknownPedigree, "disease 1")
+```
+
+### `setItemsPerRow`
+
+Attach pedigree shape with its description.
+
+**Params**
+
+- `num: number`
+    - Max items per row without overlapping
+
+**Example usage:**
+
+```js
+legendTable.setItemsPerRow(3)
+```
