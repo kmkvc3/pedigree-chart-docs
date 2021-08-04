@@ -60,7 +60,7 @@ Returns a new instance of `Pedigree`.
 
 **Params**
 
-- `sex: "female" | "male" | "unknown"`
+- `shape: "female" | "male" | "unknown" | "male-miscarriage" | "female-miscarriage" | "unknown-miscarriage"`
     - Defines shape of `Pedigree`
 - `x: number`
     - `Pedigree` position on x-axis
@@ -71,6 +71,27 @@ Returns a new instance of `Pedigree`.
 
 ```js
 const UnknownPedigree = chart.create("unknown", 100, 200)
+```
+
+:::info
+
+disease-shapes for "male-miscarriage" | "female-miscarriage" | "unknown-miscarriage" are unavailable.
+
+:::
+
+### `delete`
+
+Removes `Pedigree` instance.
+
+**Params**
+
+- `id: number`
+    - id of `Pedigree` instance that you want to remove
+
+**Example usage:**
+
+```js
+chart.delete(3)
 ```
 
 ### `connect`
@@ -254,12 +275,6 @@ Fill the pedigree with various shapes.
 - `fill`
     - fill a whole shape
 
-**Example usage:**
-
-```js
-pedigree.addDiseaseShape("q1", "#1f1f1f")
-```
-
 :::info
 
 You can stack shapes to build more extraordinary shapes
@@ -272,6 +287,72 @@ You can stack shapes to build more extraordinary shapes
 pedigree.addDiseaseShape("q3", "#1f1f1f")
 pedigree.addDiseaseShape("q4", "#1f1f1f")
 ```
+
+### `clearShapes`
+
+Remove all shapes.
+
+**Example usage:**
+
+```js
+pedigree.clearShapes()
+```
+
+### `setPregnacy`
+
+Displays a 'P' char in the middle of pedigree
+
+**Params**
+- `value: boolean = false`
+
+**Example usage:**
+
+```js
+// Display pregnancy
+pedigree.setPregnancy(true)
+
+// Hide pregnancy
+pedigree.setPregnancy(false)
+```
+
+### `setDeceased`
+
+Displays a crossing line over the pedigree
+
+**Params**
+- `value: boolean = false`
+
+**Example usage:**
+
+```js
+pedigree.setDeceased(true)
+```
+
+### `setProband`
+
+**Params**
+- `value: boolean = false`
+
+**Example usage:**
+
+```js
+pedigree.setProband(true)
+```
+
+### `setMulitpleIndividuals`
+
+Displays a number in middle of a pedigree
+
+**Params**
+- `value: boolean = false`
+- `count: number = 0`
+
+**Example usage:**
+
+```js
+pedigree.setMulitpleIndividuals(true, 5)
+```
+
 
 ## Legend
 
@@ -292,6 +373,21 @@ Attach pedigree shape with its description.
 
 ```js
 legendTable.setPedigree(unknownPedigree, "disease 1")
+```
+
+### `removePedigree`
+
+Remove `Pedigree` instance from legend and its label
+
+**Params**
+
+- `id: number`
+    - id of `Pedigree` instance that you want to remove from legend
+
+**Example usage:**
+
+```js
+legendTable.removePedigree(2)
 ```
 
 ### `setItemsPerRow`
