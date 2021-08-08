@@ -1,6 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 2
 ---
+
+# Installation
 
 import Tabs from "@theme/Tabs";
 import TabItem from "@theme/TabItem";
@@ -82,9 +84,7 @@ Make sure you will call `setDiagram` method when all DOM elements are accessible
 
 :::
 
-## Initial configuration
-
 ## What's next?
 
-- Configue chart window. [Go to configuration](https://docusaurus.io/)
-- Start drawing. [Go to basic components](https://docusaurus.io/)
+- Check available methods. [Go to API](https://docusaurus.io/pedigree-chart-docs/api)
+- Check the demo app. [Go to DEMO](https://docusaurus.io/)
