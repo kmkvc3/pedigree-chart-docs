@@ -160,7 +160,7 @@ Adds custom event listeners on events emitted by chart.
 
 **Params**
 
-- `eventName: "pedigree-click"`
+- `eventName: "pedigree-click | pedigree-drag | diagram-click"`
 - `eventHandler: Function`
 
 **Example usage:**
@@ -206,6 +206,14 @@ Get the shape position on X-axis.
 ### `getY`
 
 Get the shape position on Y-axis.
+
+### `getRawX`
+
+Get the shape position on X-axis without camera offset.
+
+### `getRawY`
+
+Get the shape position on Y-axis without camera offset.
 
 ### `getMidX`
 
