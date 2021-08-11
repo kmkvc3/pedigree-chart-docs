@@ -93,6 +93,25 @@ Removes `Pedigree` instance.
 ```js
 chart.delete(3)
 ```
+### `replace`
+
+Replace `Pedigree` instance and creates connections.
+
+**Params**
+
+- `id: number`
+    - id of `Pedigree` instance that you want to replace
+
+- `newPedigree: Pedigree`
+    - new `Pedigree` instance
+
+**Example usage:**
+
+```js
+const UnknownPedigree = chart.create("unknown", 100, 200)
+
+chart.replace(3, UnknownPedigree)
+```
 
 ### `connect`
 
