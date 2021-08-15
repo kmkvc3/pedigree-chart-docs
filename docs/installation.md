@@ -83,8 +83,3 @@ method to call after `PedigreeChart` is initied. It takes `id: string` param, wh
 Make sure you will call `setDiagram` method when all DOM elements are accessible!
 
 :::
-
-## What's next?
-
-- Check available methods. [Go to API](https://docusaurus.io/pedigree-chart-docs/api)
-- Check the demo app. [Go to DEMO](https://docusaurus.io/)

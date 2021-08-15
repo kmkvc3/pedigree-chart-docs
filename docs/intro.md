@@ -8,6 +8,10 @@ slug: /
 It is a ** zero dependency ** solution that meets the GA4GAH standarizations. 
 Build on top of HTML Canvas, allows you to speed up the process of building genograms.
 
-## What's next?
+Use API to draw shapes and connections in a very easy way. 
+Add custom event handlers and configuration options to build app with great user interactions, beautiful interfaces or simply suit app to your needs.
 
-- Set up the project. [Go to installation](https://docusaurus.io/)
+## Demo
+
+If you are interested in how it may work, checkout this **[demo app](https://kmkvc3.github.io/pedigree-chart-demo/)**
+
