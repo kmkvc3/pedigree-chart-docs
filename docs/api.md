@@ -242,6 +242,22 @@ Get the middle of shape position on X-axis.
 
 Get the middle of shape position on Y-axis.
 
+### `getScaledX`
+
+Get the shape position on X-axis recalculated by diagram scale
+
+### `getScaledY`
+
+Get the shape position on Y-axis recalculated by diagram scale
+
+### `getScaledRawX`
+
+Get the shape position on X-axis recalculated by diagram scale without camera offset
+
+### `getScaledRawY`
+
+Get the shape position on Y-axis recalculated by diagram scale without camera offset
+
 ### `setStorage`
 
 Add data that you want to store in specific pedigree.
